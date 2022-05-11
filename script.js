@@ -5,9 +5,19 @@ var questions = [
         answer: "alerts"
     },
     {
-        title: "commonly used data types DO NOT include:",
-        choices: ["strings", "booleans", "alerts", "numbers"],
-        answer: "alerts"
+        title: "Question 2",
+        choices: ["x", "y", "z", "a"],
+        answer: "a"
+    },
+    {
+        title: "Question 3",
+        choices: ["x", "y", "z", "a"],
+        answer: "a"
+    },
+    {
+        title: "Question 4",
+        choices: ["x", "y", "z", "a"],
+        answer: "a"
     }
 ];
 
@@ -60,7 +70,7 @@ function getQuestion() {
         choiceNode.setAttribute("class", "choice");
         choiceNode.setAttribute("value", choice);
 
-        choiceNode.textContent = i + choice;
+        choiceNode.textContent =  choice;
         choiceNode.onclick = questionClick;
         choicesEl.appendChild(choiceNode);
 
